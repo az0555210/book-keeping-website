@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Keeping — Accounting and Finance Website Template</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%2348649a'/><text x='16' y='23' font-size='20' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'>$</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M9.5 9.3a2.6 2.6 0 1 1 3.6 2.4c-.8.4-1.1.9-1.1 1.7M12 16.6v.1"/></svg>Have a question?</a>
+      <a href="tel:+15550142290"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>+1 555 014 2290</a>
+      <a href="mailto:hello@example.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>hello@example.com</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="container header-flex">
+        <a href="#" class="logo">
+          <span class="logo-icon">$</span>
+          <span class="logo-text">Book<br>Keeping</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="has-dropdown">
+              <a href="#services">Services
+                <svg class="caret" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+              </a>
+              <ul class="dropdown">
+                <li><a href="#services">Growth Business</a></li>
+                <li><a href="#services">Lifetime Support</a></li>
+                <li><a href="#services">Advanced Accounting</a></li>
+                <li><a href="#services">Investment Bonds</a></li>
+              </ul>
+            </li>
+            <li><a href="#news">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.6c0-.7.2-1.1 1.2-1.1H17V2.2C16.6 2.1 15.6 2 14.6 2 12 2 10.3 3.6 10.3 6.300V8H7.500v3.500h2.800V22H14V11.500h2.700L17.2 8z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.7 3h3.100l-6.8 7.700L22 21h-6.200l-4.9-6.300L5.3 21H2.200l7.2-8.300L1.8 3h6.400l4.4 5.800zm-1.1 16.200h1.700L7.3 4.700H5.500z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.5 8.800h3.700V20H4.500zM6.4 3.200a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.200zM10.5 8.800H14v1.600h.1c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.600V20h-3.700v-5.300c0-1.3 0-2.9-1.8-2.900s-2.1 1.4-2.1 2.800V20h-3.700z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="home">
+    <div class="slide active" style="background-image:url('images/slide-1.jpg')">
+      <div class="slide-content">
+        <h1>Financial Funds</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.</p>
+        <a href="#about" class="btn">Get Started</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('images/slide-2.jpg')">
+      <div class="slide-content">
+        <h1>Book Keeping<br>Consulting Agency</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.</p>
+        <a href="#about" class="btn">Get Started</a>
+      </div>
+    </div>
+
+    <button class="arrow prev" id="prevSlide" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+    <button class="arrow next" id="nextSlide" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+
+    <div class="hero-dots" id="heroDots"><span class="active"></span><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row about-row">
+        <div class="about-img"><img src="images/about.jpg" alt="Man using a calculator"></div>
+        <div class="about-text">
+          <span class="label">About Us</span>
+          <h2>Mindful Planning of Monetary Spending and Saving</h2>
+          <span class="line"></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptate asperiores rem quis consectetur cum quae, ratione voluptatem aliquam sit aspernatur.</p>
+          <div class="about-lists">
+            <ul>
+              <li>Dolor sit amet</li>
+              <li>Obcaecati similique excepturi</li>
+              <li>Ipsum amet voluptas</li>
+              <li>Aliquid facilis est</li>
+              <li>Eligendi laborum assumenda</li>
+            </ul>
+            <ul>
+              <li>Dolor sit amet</li>
+              <li>Obcaecati similique excepturi</li>
+              <li>Ipsum amet voluptas</li>
+              <li>Aliquid facilis est</li>
+              <li>Eligendi laborum assumenda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong class="count" data-target="32594">32,594</strong><span>Number of Clients</span></div>
+        <div class="stat"><strong class="count" data-target="25">25</strong><span>Years of Experience</span></div>
+        <div class="stat"><strong class="count" data-target="1029">1,029</strong><span>Employees</span></div>
+        <div class="stat"><strong class="count" data-target="10200">10,200</strong><span>Cups of Coffee</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head center">
+        <span class="label">Our Services</span>
+        <h2>What We Do</h2>
+        <span class="line"></span>
+      </div>
+
+      <div class="service-grid">
+        <div class="service">
+          <div class="hex"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><rect x="5" y="13" width="3" height="7"/><rect x="10.5" y="9" width="3" height="11"/><rect x="16" y="4" width="3" height="16"/></svg></div>
+          <h3>Growth Business</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="hex"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="m5.6 5.6 3.9 3.900M14.5 14.500l3.9 3.900M18.4 5.600l-3.9 3.900M9.5 14.500l-3.9 3.9"/></svg></div>
+          <h3>Lifetime Support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="hex"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6" fill="#fff"/><path d="M13 19h6a1 1 0 0 0 1-1v-6"/><path d="M18 6.500h2v3"/></svg></div>
+          <h3>Advanced Accounting</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="hex"><svg viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 11h16"/></svg></div>
+          <h3>Investment Bonds</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="hex"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18M11 13v2h2v-2"/></svg></div>
+          <h3>Investment Management</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="hex"><svg viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><rect x="8" y="5.5" width="8" height="3.5"/><path d="M8.5 12.500h.1M12 12.500h.1M15.5 12.500h.1M8.5 15.500h.1M12 15.500h.1M15.5 15.500h.1M8.5 18.500h.1M12 18.500h.1M15.5 18.500h.1" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+          <h3>Money Calculations</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX BANNER -->
+  <section class="banner" style="background-image:url('images/banner.jpg')">
+    <div class="banner-content">
+      <h2>We Are Here To Help<br>Grow Your Business</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head center light">
+        <span class="label">Testimonials</span>
+        <h2>Happy Clients</h2>
+        <span class="line"></span>
+      </div>
+
+      <div class="t-viewport">
+        <div class="t-track" id="tTrack">
+          <!-- slide 1 -->
+          <div class="t-slide">
+            <div class="t-item"><div class="t-person"><img src="images/claire.jpg" alt=""><div><h4>Claire Morgan</h4><span>Owner, Morgan Bakery</span></div></div>
+              <blockquote>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!”</blockquote></div>
+            <div class="t-item"><div class="t-person"><img src="images/daniel.jpg" alt=""><div><h4>Daniel Reyes</h4><span>Founder, Reyes Joinery</span></div></div>
+              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</blockquote></div>
+          </div>
+          <!-- slide 2 -->
+          <div class="t-slide">
+            <div class="t-item"><div class="t-person"><img src="images/owen.jpg" alt=""><div><h4>Owen Fletcher</h4><span>Director, Fletcher Freight</span></div></div>
+              <blockquote>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!”</blockquote></div>
+            <div class="t-item"><div class="t-person"><img src="images/samuel.jpg" alt=""><div><h4>Samuel Okafor</h4><span>Partner, Okafor Dental</span></div></div>
+              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</blockquote></div>
+          </div>
+          <!-- slide 3 -->
+          <div class="t-slide">
+            <div class="t-item"><div class="t-person"><img src="images/nora.jpg" alt=""><div><h4>Nora Whitfield</h4><span>CFO, Whitfield Studio</span></div></div>
+              <blockquote>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!”</blockquote></div>
+            <div class="t-item"><div class="t-person"><img src="images/owen.jpg" alt=""><div><h4>Owen Fletcher</h4><span>Director, Fletcher Freight</span></div></div>
+              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</blockquote></div>
+          </div>
+          <!-- slide 4 -->
+          <div class="t-slide">
+            <div class="t-item"><div class="t-person"><img src="images/samuel.jpg" alt=""><div><h4>Samuel Okafor</h4><span>Partner, Okafor Dental</span></div></div>
+              <blockquote>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!”</blockquote></div>
+            <div class="t-item"><div class="t-person"><img src="images/linda.jpg" alt=""><div><h4>Linda Harper</h4><span>Owner, Harper Florists</span></div></div>
+              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</blockquote></div>
+          </div>
+          <!-- slide 5 -->
+          <div class="t-slide">
+            <div class="t-item"><div class="t-person"><img src="images/linda.jpg" alt=""><div><h4>Linda Harper</h4><span>Owner, Harper Florists</span></div></div>
+              <blockquote>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!”</blockquote></div>
+            <div class="t-item"><div class="t-person"><img src="images/nora.jpg" alt=""><div><h4>Nora Whitfield</h4><span>CFO, Whitfield Studio</span></div></div>
+              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</blockquote></div>
+          </div>
+          <!-- slide 6 -->
+          <div class="t-slide">
+            <div class="t-item"><div class="t-person"><img src="images/daniel.jpg" alt=""><div><h4>Daniel Reyes</h4><span>Founder, Reyes Joinery</span></div></div>
+              <blockquote>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!”</blockquote></div>
+            <div class="t-item"><div class="t-person"><img src="images/claire.jpg" alt=""><div><h4>Claire Morgan</h4><span>Owner, Morgan Bakery</span></div></div>
+              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia. Possimus mollitia nobis libero quidem aut tempore dolore iure maiores, perferendis, provident numquam illum nisi amet necessitatibus. A, provident aperiam!</blockquote></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-dots" id="tDots"></div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">News</span>
+        <h2>Latest News &amp; Updates</h2>
+        <span class="line"></span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, mollitia</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="post">
+          <a href="#" class="post-img"><img src="images/news-1.jpg" alt=""><span class="date"><b>12</b>Jan</span></a>
+          <h3><a href="#">Five records to keep ready before tax season</a></h3>
+          <div class="meta">by <a href="#">Rachel Simmons</a> in <a href="#">Tax Planning</a></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio minus maiores, neque repudiandae molestias! Odio voluptas, et fuga. Quae, animi.</p>
+        </article>
+        <article class="post">
+          <a href="#" class="post-img"><img src="images/news-2.jpg" alt=""><span class="date"><b>28</b>Feb</span></a>
+          <h3><a href="#">Cash flow or profit: what your books are telling you</a></h3>
+          <div class="meta">by <a href="#">Diane Walsh</a> in <a href="#">Bookkeeping</a></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio minus maiores, neque repudiandae molestias! Odio voluptas, et fuga. Quae, animi.</p>
+        </article>
+        <article class="post">
+          <a href="#" class="post-img"><img src="images/news-3.jpg" alt=""><span class="date"><b>9</b>Mar</span></a>
+          <h3><a href="#">When to move payroll to a monthly cycle</a></h3>
+          <div class="meta">by <a href="#">Joseph Mensah</a> in <a href="#">Payroll</a></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio minus maiores, neque repudiandae molestias! Odio voluptas, et fuga. Quae, animi.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="subscribe" id="contact" style="background-image:url('images/subscribe.jpg')">
+    <div class="container sub-flex">
+      <div class="sub-text">
+        <h2>Subscribe to us!</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</p>
+      </div>
+      <form class="sub-form" id="subForm">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="send">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-col">
+          <a href="#" class="logo light"><span class="logo-icon">$</span><span class="logo-text">Book<br>Keeping</span></a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+          <a href="#" class="learn">Learn More</a>
+        </div>
+        <div class="f-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="#">Growth Business</a></li>
+            <li><a href="#">Lifetime Support</a></li>
+            <li><a href="#">Advanced Accounting</a></li>
+            <li><a href="#">Money Calculations</a></li>
+            <li><a href="#">Investment Bonds</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Investment Management</a></li>
+            <li><a href="#">Financial Funds</a></li>
+            <li><a href="#">Payroll and Tax Returns</a></li>
+            <li><a href="#">Business Planning</a></li>
+            <li><a href="#">Open an Account</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+15550142290">+1 555 014 2290</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright ©<span id="year">2026</span> All rights reserved | This template is made with <span class="heart">♥</span> by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
